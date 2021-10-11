@@ -3,7 +3,9 @@
 #define M 20
 #define N 20
 static const double epsilon   = 1.0e-8;
-int equal(double a, double b) { return abs(a-b) < epsilon; }
+int equal(double a, double b) { 
+return abs(a-b) < epsilon; //если разница между а и b меньше эпсилон,то их можно считать равными 
+}
 struct Table{
     int m,n;//m rows;n colums
     double matrix[M][N]{};
